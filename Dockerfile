@@ -36,6 +36,13 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && update-ca-certificates \
     && rm -rf /var/lib/apt/lists/*
 
+# Install Bun because the dashboard is built when the application starts.
+RUN curl -fsSL https://bun.sh/install | bash
+ENV PATH="/root/.bun/bin:$PATH"
+
+# Install dashboard dependencies so the runtime dashboard build can run.
+RUN cd /code/dashboard && bun install --frozen-lockfile
+
 COPY cli_wrapper.sh /usr/bin/pasarguard-cli
 RUN chmod +x /usr/bin/pasarguard-cli
 

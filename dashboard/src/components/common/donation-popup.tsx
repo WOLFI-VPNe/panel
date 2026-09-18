@@ -7,7 +7,7 @@ import { getAuthToken } from '@/utils/authStorage'
 
 const DONATION_STORAGE_KEY = 'donation_popup_data'
 const FIRST_SHOW_DELAY = 10 * 60 * 1000 // 10 minutes in milliseconds
-const SECRET_SALT = 'pasarguard_donation_v1' // Simple salt for checksum
+const SECRET_SALT = 'afra_donation_v1' // Simple salt for checksum
 const MAX_TIMEOUT_MS = 2_147_483_647 // Browser timeout limit (~24.8 days)
 const MODAL_BUSY_RETRY_MS = 2000 // Re-check interval while another dialog is open
 
@@ -261,12 +261,12 @@ export default function DonationPopup() {
   }
 
   const handleDonate = () => {
-    window.open('https://donate.pasarguard.org/', '_blank', 'noopener,noreferrer')
+    window.open('https://donate.afra.org/', '_blank', 'noopener,noreferrer')
     handleClose()
   }
 
   const handleGitHub = () => {
-    window.open('https://github.com/PasarGuard', '_blank', 'noopener,noreferrer')
+    window.open('https://github.com/Afra', '_blank', 'noopener,noreferrer')
     handleClose()
   }
 
@@ -317,13 +317,13 @@ export default function DonationPopup() {
 
             {/* Title */}
             <h3 className="from-primary via-primary to-primary/80 mb-3 bg-gradient-to-r bg-clip-text text-center text-2xl font-bold text-transparent">
-              {t('donation.title', { defaultValue: 'Support PasarGuard' })}
+              {t('donation.title', { defaultValue: 'Support Afra' })}
             </h3>
 
             {/* Message */}
             <p className="text-muted-foreground mb-6 px-2 text-center text-sm leading-relaxed">
               {t('donation.message', {
-                defaultValue: 'Your support helps us improve PasarGuard and build better features for everyone!',
+                defaultValue: 'Your support helps us improve Afra and build better features for everyone!',
               })}
             </p>
 

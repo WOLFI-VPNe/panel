@@ -420,12 +420,12 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
         <div className="border-sidebar-border bg-sidebar/80 supports-[backdrop-filter]:bg-sidebar/65 flex items-center justify-between border-b px-4 py-3 backdrop-blur-md">
           <Link to="/" className="flex items-center gap-2">
             <img
-              src={resolvedTheme === 'dark' ? window.location.pathname + 'statics/favicon/logo.png' : window.location.pathname + 'statics/favicon/logo-dark.png'}
-              alt="PasarGuard Logo"
+              src={resolvedTheme === 'dark' ? window.location.pathname + 'statics/favicon/afra-logo.svg' : window.location.pathname + 'statics/favicon/afra-logo.svg'}
+              alt="Afra Logo"
               className="h-8 w-8 object-contain"
             />
             <span dir={isRTL ? 'rtl' : 'ltr'} className="text-sm font-bold">
-              {t('pasarguard')}
+              {t('afra')}
             </span>
           </Link>
           <SidebarTriggerWithBadge showUpdateBadge={canReadSystem && hasUpdate} />
@@ -455,8 +455,8 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
                   >
                     <a href={REPO_URL} target="_blank">
                       <img
-                        src={resolvedTheme === 'dark' ? window.location.pathname + 'statics/favicon/logo.png' : window.location.pathname + 'statics/favicon/logo-dark.png'}
-                        alt="PasarGuard Logo"
+                        src={resolvedTheme === 'dark' ? window.location.pathname + 'statics/favicon/afra-logo.svg' : window.location.pathname + 'statics/favicon/afra-logo.svg'}
+                        alt="Afra Logo"
                         className="h-6 w-6 flex-shrink-0 object-contain"
                       />
                       {canReadSystem && hasUpdate && (
@@ -494,12 +494,12 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
                   <SidebarMenuButton size="lg" className={cn('w-full !gap-2')}>
                     <a href={REPO_URL} target="_blank" className="flex min-w-0 flex-1 items-center gap-2">
                       <img
-                        src={resolvedTheme === 'dark' ? window.location.pathname + 'statics/favicon/logo.png' : window.location.pathname + 'statics/favicon/logo-dark.png'}
-                        alt="PasarGuard Logo"
+                        src={resolvedTheme === 'dark' ? window.location.pathname + 'statics/favicon/afra-logo.svg' : window.location.pathname + 'statics/favicon/afra-logo.svg'}
+                        alt="Afra Logo"
                         className="h-8 w-8 flex-shrink-0 object-contain"
                       />
                       <div className="flex min-w-0 flex-1 flex-col items-start overflow-hidden">
-                        <span className={cn(isRTL ? 'text-right' : 'text-left', 'truncate text-sm leading-tight font-semibold')}>{t('pasarguard')}</span>
+                        <span className={cn(isRTL ? 'text-right' : 'text-left', 'truncate text-sm leading-tight font-semibold')}>{t('afra')}</span>
                         {canReadSystem && (
                           <div className="flex min-w-0 flex-wrap items-center gap-0.75 leading-none">
                             <span className="max-w-full truncate text-xs leading-none opacity-45">{displayVersion}</span>
@@ -543,12 +543,12 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
                 <SidebarMenuButton size="lg" asChild className="!gap-2">
                   <a href={REPO_URL} target="_blank">
                     <img
-                      src={resolvedTheme === 'dark' ? window.location.pathname + 'statics/favicon/logo.png' : window.location.pathname + 'statics/favicon/logo-dark.png'}
-                      alt="PasarGuard Logo"
+                      src={resolvedTheme === 'dark' ? window.location.pathname + 'statics/favicon/afra-logo.svg' : window.location.pathname + 'statics/favicon/afra-logo.svg'}
+                      alt="Afra Logo"
                       className="h-8 w-8 flex-shrink-0 object-contain"
                     />
                     <div className="flex min-w-0 flex-col overflow-hidden">
-                      <span className={cn(isRTL ? 'text-right' : 'text-left', 'truncate text-sm leading-tight font-semibold')}>{t('pasarguard')}</span>
+                      <span className={cn(isRTL ? 'text-right' : 'text-left', 'truncate text-sm leading-tight font-semibold')}>{t('afra')}</span>
                       {canReadSystem && (
                         <div className="flex min-w-0 flex-wrap items-center gap-0.75 leading-none">
                           <span className="max-w-full truncate text-xs leading-none opacity-45">{displayVersion}</span>

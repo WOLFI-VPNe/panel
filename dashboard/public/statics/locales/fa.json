@@ -1,8 +1,8 @@
 {
-  "pasarguard": "پاسارگارد",
+  "afra": "افرا",
   "dashboard": "داشبورد",
   "master": "کلی",
-  "dashboardDescription": "داشبورد مدیریت پاسارگارد",
+  "dashboardDescription": "داشبورد مدیریت افرا",
   "default": "پیش‌فرض",
   "unlimited": "نامحدود",
   "active": "فعال",
@@ -1568,7 +1568,7 @@
   "monitorServers": "نظارت بر سرورها و کاربران شما",
   "manageServers": "کنترل جزئیات سرور شما",
   "nodes.addHostForEveryInbound": "استفاده از این گره به عنوان هاست تمام ورودی‌ها",
-  "nodes.addNewPasarGuardNode": "افزودن گره پاسارگارد",
+  "nodes.addNewAfraNode": "افزودن گره افرا",
   "nodes.addNode": "افزودن گره",
   "nodes.addNodeSuccess": "گره {{name}} با موفقیت افزوده شد",
   "nodes.apply": "ویرایش گره",
@@ -3688,8 +3688,8 @@
   "hosts.filters.enabledHosts": "هاست‌های فعال",
   "hosts.filters.disabledHosts": "هاست‌های غیرفعال",
   "donation": {
-    "title": "حمایت از پاسارگارد",
-    "message": "حمایت شما به ما کمک می‌کند تا پاسارگارد را بهبود بخشیم و ویژگی‌های بهتری برای همه بسازیم!",
+    "title": "حمایت از افرا",
+    "message": "حمایت شما به ما کمک می‌کند تا افرا را بهبود بخشیم و ویژگی‌های بهتری برای همه بسازیم!",
     "donate": "حمایت مالی",
     "starOnGitHub": "ستاره در GitHub"
   },
